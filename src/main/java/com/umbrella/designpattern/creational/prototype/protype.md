@@ -57,21 +57,22 @@ subclassing.
 
 [Rectangle.java](./Rectangle.java)
 
-##Advantages and disadvantages
 
-✅ You can clone objects without coupling them with their concrete classes.
+## Advantages and disadvantages
 
-✅ You clone pre-built prototypes, and you can get rid of redundant initialization code.
+:heavy_check_mark: You can clone objects without coupling them with their concrete classes.
 
-✅ You can create complex objects more easily.
+:heavy_check_mark: You clone pre-built prototypes, and you can get rid of redundant initialization code.
 
-✅ You get an alternative to inheritance for managing complex object configuration patterns.
+:heavy_check_mark: You can create complex objects more easily.
 
-<br/>
+:heavy_check_mark: You get an alternative to inheritance for managing complex object configuration patterns.
+
 
 :x: Cloner des objets complexes dotés de références circulaires peut se révéler très difficile.
 
-##Relation with other patterns
+
+## Relation with other patterns
 
  - The Factory is often used early in the design (less complicated and more personalized thanks to subclasses) and evolves into the abstract Factory, the Prototype, or the Builder (the latter being more flexible, but more complicated).
  - Abstract Factory classes are often based on a set of Factories, but you can also use the Prototype to write their methods.
