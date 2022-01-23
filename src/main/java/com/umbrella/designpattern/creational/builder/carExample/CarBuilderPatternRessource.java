@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/api/builder-patter")
-public class BuilderPatternRessource {
+public class CarBuilderPatternRessource {
 
     @GetMapping("/car")
     public void getCar() {

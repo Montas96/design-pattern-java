@@ -48,7 +48,7 @@ subclassing.
 ![alt text](../../../../../../resources/img/prototype-example.png "prototype-example")
 
 > All forms implement the same interface, and the latter provides a method of cloning.
-> 
+>
 > A subclass can call its parent's clone method before copying the values of its own attributes into the object.
 
 [Shape.java](./Shape.java)
@@ -56,7 +56,6 @@ subclassing.
 [Circle.java](./Circle.java)
 
 [Rectangle.java](./Rectangle.java)
-
 
 ## Advantages and disadvantages
 
@@ -68,17 +67,14 @@ subclassing.
 
 :heavy_check_mark: You get an alternative to inheritance for managing complex object configuration patterns.
 
-
 :x: Cloner des objets complexes dotés de références circulaires peut se révéler très difficile.
-
 
 ## Relation with other patterns
 
- - The Factory is often used early in the design (less complicated and more personalized thanks to subclasses) and evolves into the abstract Factory, the Prototype, or the Builder (the latter being more flexible, but more complicated).
- - Abstract Factory classes are often based on a set of Factories, but you can also use the Prototype to write their methods.
- - The Prototype is useful when you want to save copies of Orders in the history.
- - Designs that rely heavily on Composite and Decorator benefit from using the Prototype. It allows you to clone complex structures rather than rebuilding them from scratch.
- - The Prototype is not based on inheritance, so it does not have its disadvantages. But the prototype requires complicated initialization for the cloned object. The Factory is based on inheritance, but does not need an initialization step.
- - Sometimes the Prototype can replace the Memento and offer a simpler solution. This is only possible if the object (the state you want to store in history) is fairly straightforward and doesn't have links to external resources, or the links are easy to recreate.
- - Abstract Factories, Assemblers and Prototypes can all be implemented as Singletons.
-
+- The Factory is often used early in the design (less complicated and more personalized thanks to subclasses) and evolves into the abstract Factory, the Prototype, or the Builder (the latter being more flexible, but more complicated).
+- Abstract Factory classes are often based on a set of Factories, but you can also use the Prototype to write their methods.
+- The Prototype is useful when you want to save copies of Orders in the history.
+- Designs that rely heavily on Composite and Decorator benefit from using the Prototype. It allows you to clone complex structures rather than rebuilding them from scratch.
+- The Prototype is not based on inheritance, so it does not have its disadvantages. But the prototype requires complicated initialization for the cloned object. The Factory is based on inheritance, but does not need an initialization step.
+- Sometimes the Prototype can replace the Memento and offer a simpler solution. This is only possible if the object (the state you want to store in history) is fairly straightforward and doesn't have links to external resources, or the links are easy to recreate.
+- Abstract Factories, Assemblers and Prototypes can all be implemented as Singletons.
