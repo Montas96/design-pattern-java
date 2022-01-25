@@ -54,8 +54,11 @@ The Bridge pattern is especially useful when dealing with cross-platform apps, s
 - Use the Bridge if you need to be able to switch implementations at runtime.
 
 ##Pros and Cons
-:heavy_check_mark: Vous pouvez créer des classes et des applications multiplateformes.
-:heavy_check_mark: Le code client manipule des abstractions de haut niveau. Il n’est pas dépendant des détails de la plateforme.
-:heavy_check_mark: Principe ouvert/fermé. Vous pouvez introduire de nouvelles abstractions et implémentations indépendamment les unes des autres.
-:heavy_check_mark: Principe de responsabilité unique. Vous pouvez vous concentrer sur la logique de haut niveau dans l’abstraction, et sur les détails de la plateforme dans l’implémentation.
-:x: Le code va devenir plus compliqué si vous introduisez ce patron dans une classe très cohésive.
+:heavy_check_mark: You can create platform-independent classes and apps.
+:heavy_check_mark: The client code works with high-level abstractions. It isn’t exposed to the platform details.
+:heavy_check_mark: Open/Closed Principle. You can introduce new abstractions and implementations independently from each other.
+:heavy_check_mark: Single Responsibility Principle. You can focus on high-level logic in the abstraction and on platform details in the implementation.
+:x: You might make the code more complicated by applying the pattern to a highly cohesive class.
+
+
+
