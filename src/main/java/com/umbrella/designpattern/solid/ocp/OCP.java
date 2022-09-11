@@ -9,7 +9,7 @@ public class OCP {
         Product tree = new Product("Tree", Color.GREEN, Size.LARGE);
         Product house = new Product("House", Color.BLUE, Size.LARGE);
 
-        /** This exemple break the  Open Close Principle
+        /** This exemple violate the  Open Close Principle
          * because each time we need a new filter we have to change or add new method in Product Filter Class
          * **/
         List<Product> products = List.of(apple,tree, house);
