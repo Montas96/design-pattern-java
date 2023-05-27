@@ -1,4 +1,4 @@
-package com.umbrella.designpattern.behavioral.visitor;
+package com.umbrella.designpattern.behavioral.visitor.shoppingcarexample;
 
 import java.time.Instant;
 
