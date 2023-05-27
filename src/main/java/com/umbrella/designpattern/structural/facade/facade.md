@@ -1,6 +1,3 @@
-#Facade pattern
-Facade is a structural design pattern that provides a simplified interface to a library, a framework, or any other complex set of classes.
-
 ##Problem
 
 Imagine that you must make your code work with a broad set of objects that belong to a sophisticated library or framework. Ordinarily, you’d need to initialize all of those objects, keep track of dependencies, execute methods in the correct order, and so on.
@@ -31,7 +28,7 @@ Often, subsystems get more complex over time. Even applying design patterns typi
 
 **Use the Facade when you want to structure a subsystem into layers.**
 
-Create facades to define entry points to each level of a subsystem. 
+Create facades to define entry points to each level of a subsystem.
 </br>You can reduce coupling between multiple subsystems by requiring them to communicate only through facades.
 
 ## Pros and Cons
@@ -60,5 +57,3 @@ So we will have different set of interfaces to work with different types of data
 But when the complexity increases or the interface behavior names are confusing, client application will find it difficult to manage it.
 
 So we can apply Facade design pattern here and provide a wrapper interface on top of the existing interface to help client application.
-
-
